@@ -12,8 +12,9 @@ spring:
           # http://localhost:8888/ecommerce/default 로 확인
 
 # 참고: file://C:\Users\Charlie\Desktop\spring-cloud-config 의 정보는 아래와 같습니다.
-# (spring-cloud-config 디렉터리에 존재하는 ecommerce.yml 파일에 아래와 같은 정보가 있습니다.)
-#  실무가 아닌 실습 프로젝트이므로 아래와 같이 주석처리하여 제공합니다.
+# (spring-cloud-config 디렉터리에 존재하는 ecommerce.yml 파일에 아래와 같은 정보가 있습니다,
+# 단 spring.profiles.active 설정시 (예를들어 spring.profiles.active=dev 로 설정) ecommerce-dev.yml 파일로 이름을 변경해주어야 합니다.)
+#  실무가 아닌 실습 프로젝트이므로 아래와 같이 주석처리하여 제공합니다. 자세한 내용은 resources/img.png 를 참조하세요.
 #token:
 #  expiration_time: 86400000
 #  secret: secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890
