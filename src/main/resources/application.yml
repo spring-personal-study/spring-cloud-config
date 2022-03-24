@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://C:\Users\Charlie\Desktop\spring-cloud-config
+          # http://localhost:8888/ecommerce/default 로 확인
