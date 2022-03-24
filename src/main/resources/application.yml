@@ -10,3 +10,13 @@ spring:
         git:
           uri: file://C:\Users\Charlie\Desktop\spring-cloud-config
           # http://localhost:8888/ecommerce/default 로 확인
+
+# 참고: file://C:\Users\Charlie\Desktop\spring-cloud-config 의 정보는 아래와 같습니다.
+# (spring-cloud-config 디렉터리에 존재하는 ecommerce.yml 파일에 아래와 같은 정보가 있습니다.)
+#  실무가 아닌 실습 프로젝트이므로 아래와 같이 주석처리하여 제공합니다.
+#token:
+#  expiration_time: 86400000
+#  secret: secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890secretusertoken7890
+#
+#gateway:
+#  ip: localhost
