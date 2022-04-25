@@ -10,8 +10,8 @@ spring:
   cloud:
     config:
       server:
-        #git:
-          #uri: file://C:\Users\Charlie\Desktop\spring-cloud-config
+        git:
+          uri: file:///${user.home}\Desktop\spring-cloud-config
           # remote config setting
           #uri: https://github.com/spring-personal-study/spring-cloud-config
           #username: [your username]
