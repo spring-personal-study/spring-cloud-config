@@ -2,6 +2,8 @@ encrypt:
   #key: password # 대칭키 방식에 사용될 키 값 (어떤 키로 암호화되었는지 알려지게 되면 위험하므로 직접 노출하면 안 된다.)
   # 비대칭 방식에 사용될 설정. windows 라면 file:///, macOS 라면 file:// 로 시작
   key-store:
-    location: file:///${user.home}/Desktop/spring-cloud-config/apiEncryptionKey.jks
+    #location: file:///${user.home}/Desktop/spring-cloud-config/apiEncryptionKey.jks
+    # Dockerfile 에서, 아래의 파일을 COPY 해서 도커 이미지에 저장했다. 따라서 이제는 아래의 경로의 파일을 참조하면 된다.
+    location: file:/apiEncryptionKey.jks
     password: 1q2w3e4r
     alias: apiEncryptionKey
