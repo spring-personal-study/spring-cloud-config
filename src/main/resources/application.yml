@@ -11,8 +11,8 @@ spring:
     config:
       server:
         git:
-          # cloud.config.service.git.uri:  file:///${user.home}\Desktop\spring-cloud-config 대신 GitHub 의 설정정보를 사용하는 것이 좋다.
-          # uri: file:///${user.home}\Desktop\spring-cloud-config
+          # cloud.config.service.git.uri:  file:///${user.home}\Desktop\spring-cloud-config-yml 대신 GitHub 의 설정정보를 사용하는 것이 좋다.
+          # uri: file:///${user.home}\Desktop\spring-cloud-config-yml
           # remote config setting
           uri: https://github.com/spring-personal-study/spring-cloud-config
           # private repository 가 아니라면 적지 않아도 된다.
@@ -20,7 +20,7 @@ spring:
           #password: [your password]
           # 위 설정정보를 잘 가지고 왔는지 http://localhost:8888/ecommerce/default 또는 ...:8888/ecommerce/dev 또는 /ecommerce/native 에서 확인할 수 있습니다.
         native:
-          search-locations: file:///${user.home}/Desktop/spring-cloud-config # 이 디렉터리 하위의 설정파일 (예를 들어 ecommerce.yml)을 읽어냅니다.
+          search-locations: file:///${user.home}/Desktop/spring-cloud-config-yml # 이 디렉터리 하위의 설정파일 (예를 들어 ecommerce.yml)을 읽어냅니다.
                                                       # 이때 참조되는 파일 이름은 user-service 등의 bootstrap.yml 에 작성된, spring.cloud.config.name 에 설정된 값에 따라 달라집니다.
                                                       # macOS 라면 file://${user.home}으로 작성해주세요.
 
